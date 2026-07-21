@@ -1,2 +1,18 @@
-Ctrl+D selects the word at the cursor, or the next occurrence of the current selection. 
-You can also add more cursors with Ctrl+Shift+L, which will add a selection at each occurrence of the current selected text.
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment (Git Bash)
+source .venv/Scripts/activate
+
+# Install requirements from file
+pip install -r requirements.txt
+
+# Save currently installed packages to requirements (optional)
+pip freeze > requirements.txt
+
+# Deactivate
+deactivate
+
+
+
+Note for VS Code: When you open VS Code after creating .venv, it will usually ask if you want to select it as the workspace interpreter. Select Yes, or open the Command Palette (Ctrl+Shift+P) $\rightarrow$ Python: Select Interpreter and pick the .venv path.
